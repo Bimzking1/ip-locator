@@ -1,6 +1,6 @@
 "use client"
 import { useRouter } from 'next/navigation';
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import Image from 'next/image'
 import style from './page.module.css'
 import Navbar from '../components/navbar';
@@ -11,19 +11,9 @@ import Banner from '../components/banner';
 import Swal from 'sweetalert2';
 
 const Page = () => {
-  const router = useRouter();
-  const [username, setUsername] = useState<any>(localStorage.getItem("username"));
-  const [password, setPassword] = useState<any>(localStorage.getItem("password"));
   const [findIP, setFindIP] = useState<any>("");
   const [data, setData] = useState<any>();
   const YOUR_ACCESS_KEY = '5d22f6cd74ab1c69100f0f19c534b520'
-
-  useEffect(() => {
-    if ((username == null) && (password == null)){
-      alert('Anda harus login!')
-      router.push('/');
-    }
-  }, []);
 
   const handleFindIP = async () => {
     const axios = require('axios');

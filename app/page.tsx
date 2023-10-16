@@ -10,23 +10,9 @@ library.add(faEye, faEyeSlash)
 
 export default function Home() {
   const router = useRouter();
-  const [storageUsername, setStorageUsername] = useState<any>(localStorage.getItem("username"));
-  const [storagePassword, setStoragePassword] = useState<any>(localStorage.getItem("password"));
   
   const [username, setUsername] = useState<string>("");
   const [password, setPassword] = useState<string>("");
-
-  useEffect(() => {
-    if ((storageUsername != null) && (storagePassword != null)){
-      Swal.fire({
-        icon: 'warning',
-        title: 'You already logged in!',
-        showConfirmButton: false,
-        timer: 1500
-      })
-      router.push('/home');
-    }
-  }, []);
   
   const handleSubmit = () => {
     if (((username == null) || (username == "")) || ((password == null) || (password == ""))){
