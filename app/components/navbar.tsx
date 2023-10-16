@@ -5,7 +5,6 @@ import Swal from 'sweetalert2';
 
 const Navbar = () => {
     const router = useRouter();
-    const [username, setUsername] = useState<any>(localStorage.getItem("username"));
   
     const handleLogout = () => {
       localStorage.clear();
@@ -26,11 +25,8 @@ const Navbar = () => {
                 logo
             </div>
             <div className='flex items-center'>
-                <div className='hidden sm:flex font-bold text-sky-500'>
-                {username}
-                </div>
                 <div onClick={handleLogout} className='h-[40px] flex items-center border rounded-full border-sky-500 text-md text-sky-500 font-bold px-4 mx-8 text-gray-800 hover:bg-sky-500 hover:text-gray-100 duration-300'>
-                Sign Out
+                    Sign Out
                 </div>
             </div>
             </div>
