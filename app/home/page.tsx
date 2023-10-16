@@ -21,7 +21,7 @@ const Page = () => {
     let config = {
       method: 'get',
       maxBodyLength: Infinity,
-      url: `https://api.ipstack.com/${findIP}?access_key=${YOUR_ACCESS_KEY}`,
+      url: `http://api.ipstack.com/${findIP}?access_key=${YOUR_ACCESS_KEY}`,
       headers: { }
     };
     

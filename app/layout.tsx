@@ -19,6 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html className={`${style.html}`} lang="en">
+      <meta httpEquiv="Content-Security-Policy" />
       <body className={`${inter.className}`}>{children}</body>
     </html>
   )
