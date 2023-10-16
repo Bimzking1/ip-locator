@@ -10,7 +10,7 @@ import Footer from '../components/footer';
 import Banner from '../components/banner';
 import Swal from 'sweetalert2';
 
-const page = () => {
+const Page = () => {
   const router = useRouter();
   const [username, setUsername] = useState<any>(localStorage.getItem("username"));
   const [password, setPassword] = useState<any>(localStorage.getItem("password"));
@@ -384,4 +384,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

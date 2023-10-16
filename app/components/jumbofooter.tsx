@@ -4,7 +4,7 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons/faInstagram';
 import { faFacebook } from '@fortawesome/free-brands-svg-icons/faFacebook';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons/faTwitter';
 
-const jumbofooter = () => {
+const Jumbofooter = () => {
     const [language, setLanguage] = useState<any>("English (US)");
     const changeSelectOptionHandler = (event: { target: { value: any; }; }) => { 
         setLanguage(event.target.value); 
@@ -101,4 +101,4 @@ const jumbofooter = () => {
     )
 }
 
-export default jumbofooter
+export default Jumbofooter

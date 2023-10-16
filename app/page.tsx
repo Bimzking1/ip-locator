@@ -18,7 +18,12 @@ export default function Home() {
 
   useEffect(() => {
     if ((storageUsername != null) && (storagePassword != null)){
-      alert('Anda sudah login!')
+      Swal.fire({
+        icon: 'warning',
+        title: 'You already logged in!',
+        showConfirmButton: false,
+        timer: 1500
+      })
       router.push('/home');
     }
   }, []);

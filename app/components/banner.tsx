@@ -1,7 +1,7 @@
 import React from 'react'
 import style from "./../home/page.module.css"
 
-const banner = () => {
+const Banner = () => {
   return (
     <>
       {/* Lower Banner 1 */}
@@ -35,4 +35,4 @@ const banner = () => {
   )
 }
 
-export default banner
+export default Banner

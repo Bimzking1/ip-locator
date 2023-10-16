@@ -2,7 +2,7 @@ import { useRouter } from 'next/navigation';
 import { useState } from 'react'
 import Swal from 'sweetalert2';
 
-const navbar = () => {
+const Navbar = () => {
     const router = useRouter();
     const [username, setUsername] = useState<any>(localStorage.getItem("username"));
   
@@ -37,4 +37,4 @@ const navbar = () => {
     )
 }
 
-export default navbar
+export default Navbar

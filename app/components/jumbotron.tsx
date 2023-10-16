@@ -1,6 +1,6 @@
 import React from 'react'
 
-const jumbotron = () => {
+const Jumbotron = () => {
   return (
     <>
       <div className='w-full flex justify-center h-[150px] mt-16 mb-4'>
@@ -17,4 +17,4 @@ const jumbotron = () => {
   )
 }
 
-export default jumbotron
+export default Jumbotron
